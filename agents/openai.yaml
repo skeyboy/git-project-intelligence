@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git 项目与人员洞察"
+  short_description: "从 Git 还原业务、技术决策、人员画像与方案可行性"
+  default_prompt: "使用 $git-project-intelligence 分析当前项目、贡献者技术思路、模块修改方式与代表性方案可行性，并给出证据边界。"
