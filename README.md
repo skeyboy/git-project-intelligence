@@ -81,9 +81,14 @@ flowchart LR
 
 ```text
 git-project-intelligence/
+├── .github/
+│   └── workflows/
+│       └── update-fork-trend.yml
 ├── SKILL.md
 ├── README.md
 ├── README.en.md
+├── assets/
+│   └── fork-trend.svg
 ├── agents/
 │   └── openai.yaml
 ├── references/
@@ -92,7 +97,8 @@ git-project-intelligence/
 │   └── report-contract.md
 └── scripts/
     ├── collect_git_evidence.py
-    └── find_business_context.py
+    ├── find_business_context.py
+    └── update_fork_trend.py
 ```
 
 | 路径 | 作用 |
@@ -104,6 +110,9 @@ git-project-intelligence/
 | `references/contributor-engineering-analysis.md` | 贡献者知识、技术决策、模块修改方式和方案可行性分析规范。 |
 | `scripts/collect_git_evidence.py` | 以有界、只读方式汇总提交、作者、文件热度和 numstat，输出 JSON。 |
 | `scripts/find_business_context.py` | 联合 `rg` 与 Git 历史查找业务关键词相关的代码、文件和提交，输出 JSON。 |
+| `scripts/update_fork_trend.py` | 获取完整 Fork 历史并生成从仓库创建日至当前日期的累计 SVG 趋势图。 |
+| `.github/workflows/update-fork-trend.yml` | 每 6 小时或手动触发趋势图更新，并在内容变化时提交新图。 |
+| `assets/fork-trend.svg` | README 使用的自动生成 Fork 趋势图。 |
 
 ## 环境要求
 
@@ -363,7 +372,7 @@ git -C /path/to/repository rev-parse --show-toplevel
 本项目的 Python 脚本仅依赖标准库。修改后可先执行语法检查和帮助输出：
 
 ```bash
-python3 -m py_compile scripts/collect_git_evidence.py scripts/find_business_context.py
+python3 -m py_compile scripts/collect_git_evidence.py scripts/find_business_context.py scripts/update_fork_trend.py
 python3 scripts/collect_git_evidence.py --help
 python3 scripts/find_business_context.py --help
 ```
@@ -390,17 +399,9 @@ python3 scripts/find_business_context.py \
 
 [![GitHub forks](https://img.shields.io/github/forks/skeyboy/git-project-intelligence?style=flat&label=Forks)](https://github.com/skeyboy/git-project-intelligence/network/members)
 
-以下趋势图依据 [GitHub REST API 的公开 Fork 数据](https://api.github.com/repos/skeyboy/git-project-intelligence/forks?per_page=100&sort=oldest)生成，展示仓库创建以来的累计 Fork 数。
+趋势图从仓库创建日开始，依据 [GitHub REST API](https://api.github.com/repos/skeyboy/git-project-intelligence/forks?per_page=100&sort=oldest) 中每个 Fork 的创建时间累计统计。GitHub Actions 每 6 小时自动获取完整分页数据并更新图表，也可通过 `Update fork trend` 工作流手动刷新。
 
-```mermaid
-xychart-beta
-    title "累计 GitHub Fork 数"
-    x-axis ["07-31", "08-01", "08-02", "08-03"]
-    y-axis "Forks" 0 --> 1
-    line [0, 0, 0, 0]
-```
-
-> 数据快照：2026-08-03（Asia/Shanghai）。仓库创建于 2026-07-31；快照时 `forks_count = 0`，公开 Fork 列表为空。顶部徽章读取 GitHub 当前数据，会自动更新；趋势图是带日期的静态快照，可通过 [GitHub Network](https://github.com/skeyboy/git-project-intelligence/network/members) 核对最新 Fork 明细。
+[![GitHub Fork 趋势](assets/fork-trend.svg)](https://github.com/skeyboy/git-project-intelligence/network/members)
 
 ## License
 

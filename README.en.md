@@ -81,9 +81,14 @@ When the two disagree, the report should state the discrepancy and its consequen
 
 ```text
 git-project-intelligence/
+├── .github/
+│   └── workflows/
+│       └── update-fork-trend.yml
 ├── SKILL.md
 ├── README.md
 ├── README.en.md
+├── assets/
+│   └── fork-trend.svg
 ├── agents/
 │   └── openai.yaml
 ├── references/
@@ -92,7 +97,8 @@ git-project-intelligence/
 │   └── report-contract.md
 └── scripts/
     ├── collect_git_evidence.py
-    └── find_business_context.py
+    ├── find_business_context.py
+    └── update_fork_trend.py
 ```
 
 | Path | Purpose |
@@ -104,6 +110,9 @@ git-project-intelligence/
 | `references/contributor-engineering-analysis.md` | Rules for contributor knowledge, technical decisions, module-change strategies, and solution feasibility. |
 | `scripts/collect_git_evidence.py` | Produces JSON containing bounded, read-only commit, author, file-frequency, and numstat evidence. |
 | `scripts/find_business_context.py` | Uses `rg` and Git history to find code, files, and commits associated with business keywords. |
+| `scripts/update_fork_trend.py` | Fetches complete fork history and generates a cumulative SVG chart from repository creation through today. |
+| `.github/workflows/update-fork-trend.yml` | Refreshes the trend every six hours or on demand, committing the chart only when it changes. |
+| `assets/fork-trend.svg` | Generated fork trend chart embedded in the READMEs. |
 
 ## Requirements
 
@@ -369,7 +378,7 @@ Narrow `--revision`, `--since`, `--until`, and `--path`, and lower `--max-commit
 The Python scripts use only the standard library. After making changes, begin with syntax checks and help output:
 
 ```bash
-python3 -m py_compile scripts/collect_git_evidence.py scripts/find_business_context.py
+python3 -m py_compile scripts/collect_git_evidence.py scripts/find_business_context.py scripts/update_fork_trend.py
 python3 scripts/collect_git_evidence.py --help
 python3 scripts/find_business_context.py --help
 ```
@@ -396,17 +405,9 @@ Issues and pull requests that add analysis scenarios, report contracts, boundary
 
 [![GitHub forks](https://img.shields.io/github/forks/skeyboy/git-project-intelligence?style=flat&label=Forks)](https://github.com/skeyboy/git-project-intelligence/network/members)
 
-The chart below is generated from [public GitHub REST API fork data](https://api.github.com/repos/skeyboy/git-project-intelligence/forks?per_page=100&sort=oldest) and shows cumulative forks since the repository was created.
+Starting from the repository creation date, the chart accumulates forks by their creation time from the [GitHub REST API](https://api.github.com/repos/skeyboy/git-project-intelligence/forks?per_page=100&sort=oldest). GitHub Actions fetches every page and updates the chart every six hours; the `Update fork trend` workflow also supports manual refreshes.
 
-```mermaid
-xychart-beta
-    title "Cumulative GitHub Forks"
-    x-axis ["Jul 31", "Aug 1", "Aug 2", "Aug 3"]
-    y-axis "Forks" 0 --> 1
-    line [0, 0, 0, 0]
-```
-
-> Data snapshot: August 3, 2026 (Asia/Shanghai). The repository was created on July 31, 2026; at snapshot time, `forks_count = 0` and the public fork list was empty. The badge above reads current GitHub data and updates automatically. The chart is a dated static snapshot; use [GitHub Network](https://github.com/skeyboy/git-project-intelligence/network/members) to inspect the latest fork details.
+[![GitHub fork trend](assets/fork-trend.svg)](https://github.com/skeyboy/git-project-intelligence/network/members)
 
 ## License
 
