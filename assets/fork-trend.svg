@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
   <title id="title">Cumulative GitHub fork trend for skeyboy/git-project-intelligence</title>
-  <desc id="desc">0 cumulative forks from 2026-07-31 through 2026-09-01.</desc>
+  <desc id="desc">0 cumulative forks from 2026-07-31 through 2026-09-02.</desc>
   <style>
     .background { fill: #ffffff; }
     .title { fill: #1f2328; font: 600 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
@@ -21,10 +21,10 @@
   </style>
   <rect class="background" width="100%" height="100%" rx="6"/>
   <text x="72" y="28" class="title">Cumulative GitHub Forks</text>
-  <text x="888" y="28" text-anchor="end" class="meta">Updated 2026-09-01 UTC</text>
+  <text x="888" y="28" text-anchor="end" class="meta">Updated 2026-09-02 UTC</text>
   <line x1="72" y1="298.0" x2="888" y2="298.0" class="grid"/><line x1="72" y1="54.0" x2="888" y2="54.0" class="grid"/>
-  <text x="60" y="302.0" text-anchor="end" class="axis-label">0</text><text x="60" y="58.0" text-anchor="end" class="axis-label">1</text><text x="72.0" y="328" text-anchor="middle" class="axis-label">2026-07-31</text><text x="225.0" y="328" text-anchor="middle" class="axis-label">2026-08-06</text><text x="403.5" y="328" text-anchor="middle" class="axis-label">2026-08-13</text><text x="556.5" y="328" text-anchor="middle" class="axis-label">2026-08-19</text><text x="735.0" y="328" text-anchor="middle" class="axis-label">2026-08-26</text><text x="888.0" y="328" text-anchor="middle" class="axis-label">2026-09-01</text>
-  <polygon points="72,298 72.0,298.0 97.5,298.0 123.0,298.0 148.5,298.0 174.0,298.0 199.5,298.0 225.0,298.0 250.5,298.0 276.0,298.0 301.5,298.0 327.0,298.0 352.5,298.0 378.0,298.0 403.5,298.0 429.0,298.0 454.5,298.0 480.0,298.0 505.5,298.0 531.0,298.0 556.5,298.0 582.0,298.0 607.5,298.0 633.0,298.0 658.5,298.0 684.0,298.0 709.5,298.0 735.0,298.0 760.5,298.0 786.0,298.0 811.5,298.0 837.0,298.0 862.5,298.0 888.0,298.0 888,298" class="area"/>
-  <polyline points="72.0,298.0 97.5,298.0 123.0,298.0 148.5,298.0 174.0,298.0 199.5,298.0 225.0,298.0 250.5,298.0 276.0,298.0 301.5,298.0 327.0,298.0 352.5,298.0 378.0,298.0 403.5,298.0 429.0,298.0 454.5,298.0 480.0,298.0 505.5,298.0 531.0,298.0 556.5,298.0 582.0,298.0 607.5,298.0 633.0,298.0 658.5,298.0 684.0,298.0 709.5,298.0 735.0,298.0 760.5,298.0 786.0,298.0 811.5,298.0 837.0,298.0 862.5,298.0 888.0,298.0" class="line"/>
+  <text x="60" y="302.0" text-anchor="end" class="axis-label">0</text><text x="60" y="58.0" text-anchor="end" class="axis-label">1</text><text x="72.0" y="328" text-anchor="middle" class="axis-label">2026-07-31</text><text x="245.1" y="328" text-anchor="middle" class="axis-label">2026-08-07</text><text x="393.5" y="328" text-anchor="middle" class="axis-label">2026-08-13</text><text x="566.5" y="328" text-anchor="middle" class="axis-label">2026-08-20</text><text x="714.9" y="328" text-anchor="middle" class="axis-label">2026-08-26</text><text x="888.0" y="328" text-anchor="middle" class="axis-label">2026-09-02</text>
+  <polygon points="72,298 72.0,298.0 96.7,298.0 121.5,298.0 146.2,298.0 170.9,298.0 195.6,298.0 220.4,298.0 245.1,298.0 269.8,298.0 294.5,298.0 319.3,298.0 344.0,298.0 368.7,298.0 393.5,298.0 418.2,298.0 442.9,298.0 467.6,298.0 492.4,298.0 517.1,298.0 541.8,298.0 566.5,298.0 591.3,298.0 616.0,298.0 640.7,298.0 665.5,298.0 690.2,298.0 714.9,298.0 739.6,298.0 764.4,298.0 789.1,298.0 813.8,298.0 838.5,298.0 863.3,298.0 888.0,298.0 888,298" class="area"/>
+  <polyline points="72.0,298.0 96.7,298.0 121.5,298.0 146.2,298.0 170.9,298.0 195.6,298.0 220.4,298.0 245.1,298.0 269.8,298.0 294.5,298.0 319.3,298.0 344.0,298.0 368.7,298.0 393.5,298.0 418.2,298.0 442.9,298.0 467.6,298.0 492.4,298.0 517.1,298.0 541.8,298.0 566.5,298.0 591.3,298.0 616.0,298.0 640.7,298.0 665.5,298.0 690.2,298.0 714.9,298.0 739.6,298.0 764.4,298.0 789.1,298.0 813.8,298.0 838.5,298.0 863.3,298.0 888.0,298.0" class="line"/>
   <text x="480.0" y="176.0" text-anchor="middle" class="empty">No forks yet</text>
 </svg>
