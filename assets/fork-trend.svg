@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
   <title id="title">Cumulative GitHub fork trend for skeyboy/git-project-intelligence</title>
-  <desc id="desc">0 cumulative forks from 2026-07-31 through 2026-09-10.</desc>
+  <desc id="desc">0 cumulative forks from 2026-07-31 through 2026-09-11.</desc>
   <style>
     .background { fill: #ffffff; }
     .title { fill: #1f2328; font: 600 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
@@ -21,10 +21,10 @@
   </style>
   <rect class="background" width="100%" height="100%" rx="6"/>
   <text x="72" y="28" class="title">Cumulative GitHub Forks</text>
-  <text x="888" y="28" text-anchor="end" class="meta">Updated 2026-09-10 UTC</text>
+  <text x="888" y="28" text-anchor="end" class="meta">Updated 2026-09-11 UTC</text>
   <line x1="72" y1="298.0" x2="888" y2="298.0" class="grid"/><line x1="72" y1="54.0" x2="888" y2="54.0" class="grid"/>
-  <text x="60" y="302.0" text-anchor="end" class="axis-label">0</text><text x="60" y="58.0" text-anchor="end" class="axis-label">1</text><text x="72.0" y="328" text-anchor="middle" class="axis-label">2026-07-31</text><text x="231.2" y="328" text-anchor="middle" class="axis-label">2026-08-08</text><text x="390.4" y="328" text-anchor="middle" class="axis-label">2026-08-16</text><text x="569.6" y="328" text-anchor="middle" class="axis-label">2026-08-25</text><text x="728.8" y="328" text-anchor="middle" class="axis-label">2026-09-02</text><text x="888.0" y="328" text-anchor="middle" class="axis-label">2026-09-10</text>
-  <polygon points="72,298 72.0,298.0 91.9,298.0 111.8,298.0 131.7,298.0 151.6,298.0 171.5,298.0 191.4,298.0 211.3,298.0 231.2,298.0 251.1,298.0 271.0,298.0 290.9,298.0 310.8,298.0 330.7,298.0 350.6,298.0 370.5,298.0 390.4,298.0 410.3,298.0 430.2,298.0 450.1,298.0 470.0,298.0 490.0,298.0 509.9,298.0 529.8,298.0 549.7,298.0 569.6,298.0 589.5,298.0 609.4,298.0 629.3,298.0 649.2,298.0 669.1,298.0 689.0,298.0 708.9,298.0 728.8,298.0 748.7,298.0 768.6,298.0 788.5,298.0 808.4,298.0 828.3,298.0 848.2,298.0 868.1,298.0 888.0,298.0 888,298" class="area"/>
-  <polyline points="72.0,298.0 91.9,298.0 111.8,298.0 131.7,298.0 151.6,298.0 171.5,298.0 191.4,298.0 211.3,298.0 231.2,298.0 251.1,298.0 271.0,298.0 290.9,298.0 310.8,298.0 330.7,298.0 350.6,298.0 370.5,298.0 390.4,298.0 410.3,298.0 430.2,298.0 450.1,298.0 470.0,298.0 490.0,298.0 509.9,298.0 529.8,298.0 549.7,298.0 569.6,298.0 589.5,298.0 609.4,298.0 629.3,298.0 649.2,298.0 669.1,298.0 689.0,298.0 708.9,298.0 728.8,298.0 748.7,298.0 768.6,298.0 788.5,298.0 808.4,298.0 828.3,298.0 848.2,298.0 868.1,298.0 888.0,298.0" class="line"/>
+  <text x="60" y="302.0" text-anchor="end" class="axis-label">0</text><text x="60" y="58.0" text-anchor="end" class="axis-label">1</text><text x="72.0" y="328" text-anchor="middle" class="axis-label">2026-07-31</text><text x="227.4" y="328" text-anchor="middle" class="axis-label">2026-08-08</text><text x="402.3" y="328" text-anchor="middle" class="axis-label">2026-08-17</text><text x="557.7" y="328" text-anchor="middle" class="axis-label">2026-08-25</text><text x="732.6" y="328" text-anchor="middle" class="axis-label">2026-09-03</text><text x="888.0" y="328" text-anchor="middle" class="axis-label">2026-09-11</text>
+  <polygon points="72,298 72.0,298.0 91.4,298.0 110.9,298.0 130.3,298.0 149.7,298.0 169.1,298.0 188.6,298.0 208.0,298.0 227.4,298.0 246.9,298.0 266.3,298.0 285.7,298.0 305.1,298.0 324.6,298.0 344.0,298.0 363.4,298.0 382.9,298.0 402.3,298.0 421.7,298.0 441.1,298.0 460.6,298.0 480.0,298.0 499.4,298.0 518.9,298.0 538.3,298.0 557.7,298.0 577.1,298.0 596.6,298.0 616.0,298.0 635.4,298.0 654.9,298.0 674.3,298.0 693.7,298.0 713.1,298.0 732.6,298.0 752.0,298.0 771.4,298.0 790.9,298.0 810.3,298.0 829.7,298.0 849.1,298.0 868.6,298.0 888.0,298.0 888,298" class="area"/>
+  <polyline points="72.0,298.0 91.4,298.0 110.9,298.0 130.3,298.0 149.7,298.0 169.1,298.0 188.6,298.0 208.0,298.0 227.4,298.0 246.9,298.0 266.3,298.0 285.7,298.0 305.1,298.0 324.6,298.0 344.0,298.0 363.4,298.0 382.9,298.0 402.3,298.0 421.7,298.0 441.1,298.0 460.6,298.0 480.0,298.0 499.4,298.0 518.9,298.0 538.3,298.0 557.7,298.0 577.1,298.0 596.6,298.0 616.0,298.0 635.4,298.0 654.9,298.0 674.3,298.0 693.7,298.0 713.1,298.0 732.6,298.0 752.0,298.0 771.4,298.0 790.9,298.0 810.3,298.0 829.7,298.0 849.1,298.0 868.6,298.0 888.0,298.0" class="line"/>
   <text x="480.0" y="176.0" text-anchor="middle" class="empty">No forks yet</text>
 </svg>
